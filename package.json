@@ -1,0 +1,24 @@
+{
+  "name": "burger-logger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djtoohey/burger.git"
+  },
+  "author": "djtoohey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/djtoohey/burger/issues"
+  },
+  "homepage": "https://github.com/djtoohey/burger#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "mysql": "^2.18.1"
+  }
+}
