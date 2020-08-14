@@ -1,36 +1,52 @@
-<h1>Burgers!</h1>
+<header>
+    <h1 class="display-3">Burg's Burgers!</h1>
 
-<h2>Burgers need to be devoured!</h2>
+    <img src="/assets/imgs/burger.png">
 
-<h2>Still need to be eated</h2>
-<ul>
-    {{#each burgers}}
-    {{#unless devoured}}
-    <li>
-        <input value="{{id}}) {{burger_name}}" readonly>
-        <button class="devourBtn" id="{{id}}">devour</button>
-    </li>
-    {{/unless}}
-    {{/each}}
-</ul>
+    <h2>Burgers need to be devoured!</h2>
+</header>
 
-<h2>Eated</h2>
-<ul>
-    {{#each burgers}}
-    {{#if devoured}}
-    <li>
-        <input placeholder="{{id}}) {{burger_name}}" readonly>
-    </li>
-    {{/if}}
-    {{/each}}
-</ul>
-
-<h2>Add a Burger:</h2>
-<form class="newBurgerForm">
-
-    <div class="form-group">
-        <input type="text" id="newBurger">
+<main class="row">
+    <div class="col-1"></div>
+    <div class="col-5">
+        <h2>Available Burgers:</h2>
+        <ul>
+            {{#each burgers}}
+            {{#unless devoured}}
+            <li>
+                <input value="{{id}}) {{burger_name}}" readonly>
+                <button class="devourBtn" id="{{id}}" style="border-radius: 10px 2px;">DEVOUR!</button>
+            </li>
+            {{/unless}}
+            {{/each}}
+        </ul>
     </div>
 
-    <button type="submit">Submit</button>
-</form>
+    <div class="col-5">
+        <h2>Already Devoured burgers:</h2>
+        <ul>
+            {{#each burgers}}
+            {{#if devoured}}
+            <li>
+                <input placeholder="{{id}}) {{burger_name}}" readonly>
+            </li>
+            {{/if}}
+            {{/each}}
+        </ul>
+    </div>
+    <div class="col-1"></div>
+</main>
+
+
+<footer>
+    <h2>Add a Burger:</h2>
+    <form class="newBurgerForm">
+
+        <div class="form-group">
+            <input type="text" id="newBurger" placeholder="Burger">
+        </div>
+
+        <button type="submit">Submit</button>
+        <p>Enter a burger you want to eat and click the "Submit" button!</p>
+    </form>
+</footer>

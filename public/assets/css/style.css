@@ -1,0 +1,73 @@
+/* color scheme
+    white: #f
+    black: #100e0f
+    red: #ec5051
+    blue: #95cada
+    grey/blue: #495458
+
+*/
+
+
+body{
+    color:#100e0f;
+}
+
+header{
+    text-align: center;
+    background-color: #ec5051;
+    padding-bottom: 10px;
+}
+
+img{
+    width: 250px;
+    height: auto;
+}
+
+main{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #95cada;
+}
+
+li{
+    list-style: none;
+    padding-bottom: 5px;
+}
+
+input {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    text-align: center;
+    border: none;
+}
+
+button{
+    width: 25%;
+    padding: 12px 20px;
+    
+    color: #ffffff;
+    background-color: #ec5051;
+
+    /* couldn't do border radius through css so its in index.handlebars 
+    border-radius: 10px; */
+    text-decoration: none;
+    border: none;
+
+    transition-duration: 0.4s;
+}
+
+button:hover{
+    background-color: #ffffff;
+    color: #ec5051;
+}
+
+
+footer{
+    background-color: #495458;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
