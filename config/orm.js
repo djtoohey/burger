@@ -8,7 +8,7 @@ var orm = {
             if (err) throw err;
 
             console.log(data);
-        })
+        });
     },
 
     insertOne: function (burgerName, ifDevoured) {
@@ -18,7 +18,7 @@ var orm = {
             if (err) throw err;
 
             console.log(data)
-        })
+        });
     },
 
     updateOne: function (burgerName, ifDevoured) {
@@ -28,8 +28,8 @@ var orm = {
             if (err) throw err;
 
             console.log(data)
-        })
+        });
     }
-}
+};
 
 module.exports = orm;
