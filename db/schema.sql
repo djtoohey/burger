@@ -10,8 +10,7 @@ USE burger_db;
 -- Created the table "burgers"
 CREATE TABLE burgers (
     id INT AUTO_INCREMENT NOT NULL,
-
-    -- might allow devoured to be null once we start 
+    
     burger_name VARCHAR(30) NOT NULL,
     devoured BOOLEAN NOT NULL,
 
