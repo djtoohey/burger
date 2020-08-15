@@ -24,6 +24,7 @@ This project is licensed under the terms of the MIT.
 
 ## Tests
 ![Final Outcome](./assets/finishedProduct.gif "Finished Gif of App working")
+
 https://infinite-shelf-22659.herokuapp.com/index
     
 ## Questions
